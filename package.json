@@ -1,0 +1,20 @@
+{
+  "name": "buttons",
+  "version": "0.0.0",
+  "description": "Buttons for counting things and stuff",
+  "scripts": {
+    "start": "vite --port 5000 --host 0.0.0.0",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "vite": "^2.5.1",
+    "vite-plugin-solid": "^2.0.3"
+  },
+  "dependencies": {
+    "hsluv": "^0.1.0",
+    "solid-js": "^1.1.1"
+  }
+}
