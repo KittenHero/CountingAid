@@ -8,8 +8,8 @@ function randintRange(min, max) {
 
 function Counter() {
   const [count, setCount] = createSignal(0);
-  const lightness = randintRange(0, 100);
-  const color = hsluvToHex([randintRange(0, 360), randintRange(0, 100), lightness]);
+  const lightness = randintRange(5, 95);
+  const color = hsluvToHex([randintRange(0, 360), randintRange(50, 100), lightness]);
   const textColor = lightness >= 50 ? "black" : "white";
   return (
     <div>
@@ -28,7 +28,18 @@ function App() {
 
   return (
     <div class={styles.App}>
-      <button class={styles.createButton} onClick={() => setCounters(counters => counters.concat([Counter()]))}>+</button>
+      <header class={styles.header}>
+        <button
+         class={styles.createButton}
+         onClick={() => setCounters(counters => counters.concat([Counter()]))}>
+          +
+        </button>
+        <button
+         class={styles.resetButton}
+         onClick={() => setCounters([Counter()])}>
+          🔄
+        </button>
+      </header>
       <main class={styles.main}>
        {counters}
       </main>

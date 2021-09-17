@@ -9,12 +9,24 @@
   grid-row: 
 }
 
-.createButton {
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createButton, .resetButton {
   margin: .5rem;
   height: 3rem;
   width: 3rem;
   font-size: 2rem;
   border-radius: .5rem;
+  border: 0;
+}
+.resetButton {
+  background-color: #3b88c3;
+  color: #ffffff;
+}
+.createButton {
   color: #8a1111;
   background-color: #ed5555;
 }
