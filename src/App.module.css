@@ -1,17 +1,24 @@
 .App {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .main {
-  display: grid;
+  display: flex;
   text-align: center;
-  grid-row: 
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  overflow: scroll;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  height: 4rem;
 }
 
 .createButton, .resetButton {

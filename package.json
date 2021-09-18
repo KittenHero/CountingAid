@@ -1,7 +1,7 @@
 {
-  "name": "buttons",
+  "name": "CountingAid",
   "version": "0.0.0",
-  "description": "Buttons for counting things and stuff",
+  "description": "Use buttons for counting things and stuff",
   "scripts": {
     "start": "vite --port 5000 --host 0.0.0.0",
     "dev": "vite",
