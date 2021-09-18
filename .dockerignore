@@ -1,7 +1,5 @@
 Dockerfile
 docker-compose.yml
 node_modules
-vite_cache
 README
 .gitignore
-.vite_cache
