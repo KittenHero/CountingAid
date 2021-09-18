@@ -1,9 +1,9 @@
 version: "3.8"
 services:
   dev:
-    build: .
+    build: site
     ports:
       - "5000:5000"
     volumes:
-      - .:/app
+      - ./site:/app
       - /app/node_modules
