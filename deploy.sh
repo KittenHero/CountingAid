@@ -1,4 +1,9 @@
 #!/bin/sh
+set -e
+
+terraform -chdir=infra init -input=false
+terraform -chdir=infra plan -input=false
+terraform -chdir=infra apply -input=false
 
 BUCKET=s3://counting-aid.kittenhero.zone
 docker-compose run dev npm run build

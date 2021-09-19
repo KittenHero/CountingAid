@@ -32,7 +32,7 @@ function App() {
         <button
          class={styles.createButton}
          onClick={() => setCounters(counters => counters.concat([Counter()]))}>
-          +
+          ➕
         </button>
         <button
          class={styles.resetButton}
