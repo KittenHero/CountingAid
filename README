@@ -5,6 +5,13 @@ Use buttons to count things and stuff
 
 
 How to run:
+
+Linux:
 ```
-> docker-compose up --build
+> docker-compose start dev --build
+```
+
+Windows:
+```
+> DOCKER_BUILDKIT=1 docker-compose start win_dev --build
 ```

@@ -1,0 +1,4 @@
+# syntax = edrevo/dockerfile-plus
+
+INCLUDE+ Dockerfile
+ENV CHOKIDAR_USEPOLLING true
