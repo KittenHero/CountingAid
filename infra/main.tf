@@ -24,6 +24,10 @@ resource "aws_s3_bucket" "counting_aid_site" {
     }
 }
 
+output bucket_id {
+    value = aws_s3_bucket.counting_aid_site.id
+}
+
 resource "aws_s3_bucket_policy" "public_read" {
     bucket = aws_s3_bucket.counting_aid_site.id
     policy = jsonencode({
